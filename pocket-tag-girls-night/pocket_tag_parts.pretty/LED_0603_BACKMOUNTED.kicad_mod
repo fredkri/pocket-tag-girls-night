@@ -1,0 +1,182 @@
+(footprint "LED_0603_BACKMOUNTED"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)")
+	(tags "LED handsolder")
+	(property "Reference" "REF**"
+		(at 0 -1.65 0)
+		(layer "F.SilkS")
+		(uuid "53de9bd4-b9df-4ab4-a3e3-0fa66e66a489")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "LED_0603_BACKMOUNTED"
+		(at 0 1.65 0)
+		(layer "F.Fab")
+		(uuid "2fdbf83b-f93f-4928-b500-b066ef6400aa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "446a8a5e-6d15-4959-98c3-5a9d625f9654")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6d889524-ca6d-4b92-bddd-b6759076c385")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "aa97f38c-e570-40b6-adc7-37dc8dd70d81")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_poly
+		(pts
+			(xy -1 -0.5) (xy 1 -0.5) (xy 1 0.5) (xy -1 0.5)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "ff88ba8d-dbc7-45d9-bd11-6743b3ebeb36")
+	)
+	(fp_line
+		(start -1.8 -0.7)
+		(end -1.8 0.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1a5f4d53-a5ca-4881-9a8f-d6e8116428b4")
+	)
+	(fp_rect
+		(start -1.65 -0.75)
+		(end 1.65 0.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e96159b7-8daa-4c42-a625-6476df758c32")
+	)
+	(fp_rect
+		(start -0.8 -0.4)
+		(end 0.8 0.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b22fc144-0067-4c94-bad5-34020b8cfd9f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "5cbafb2d-9fd3-45ab-a708-082c5d9acc43")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.08)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -1.005 0)
+		(size 0.8 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.217391)
+		(uuid "48fd8d9a-5e60-4e60-ae29-05a3b753169d")
+	)
+	(pad "2" smd roundrect
+		(at 1.005 0)
+		(size 0.8 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.217391)
+		(uuid "0d018005-0086-4ca8-8114-01c5c15708a1")
+	)
+	(zone
+		(layer "F.Cu")
+		(uuid "13c74f0c-1d08-4939-aee6-3051e370551f")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy -1.7 -0.3) (xy -1.688573 -0.406283) (xy -1.638839 -0.539624) (xy -1.553553 -0.653553) (xy -1.439624 -0.738839)
+				(xy -1.306283 -0.788573) (xy -1.2 -0.8) (xy 1.2 -0.8) (xy 1.306283 -0.788573) (xy 1.439624 -0.738839)
+				(xy 1.553553 -0.653553) (xy 1.638839 -0.539624) (xy 1.688573 -0.406283) (xy 1.7 -0.3) (xy 1.7 0.3)
+				(xy 1.688573 0.406283) (xy 1.638839 0.539624) (xy 1.553553 0.653553) (xy 1.439624 0.738839) (xy 1.306283 0.788573)
+				(xy 1.2 0.8) (xy -1.2 0.8) (xy -1.306283 0.788573) (xy -1.439624 0.738839) (xy -1.553553 0.653553)
+				(xy -1.638839 0.539624) (xy -1.688573 0.406283) (xy -1.7 0.3)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
