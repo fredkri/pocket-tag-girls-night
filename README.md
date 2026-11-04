@@ -1,6 +1,21 @@
 # Pocket Tag Girls' Night
 Tiny laser tag for Elab girls' night!
 
+
+# Kit content:
+* Bag of small parts, containing:
+<img src="media/kit_content.jpg" width="500" />
+
+In addition:
+* Main PCB (in red or black)
+* 3d-printed laser blaster (in a variaty of colours)
+* Battery
+* 40cm of 3-conductor cable
+
+Optional extras:
+* String to make a neck-strap
+* Wire to attach neck-strap to PCB
+
 # Assembly instructions
 
 ### 1. LED + resistor for LOGO
@@ -34,17 +49,17 @@ Apply 3.3V between PC2 and GND on the test points. The LEDs on the shoulder pads
 
 <img src="media/test2-shoulder-leds.png" alt="Test shoulder LEDs" width="500">
 
+
 ### 3. Buzzer with components
 Components:
 - Buzzer for BZ1
 - 2302 NMOS for Q1
 - 1Ω for R6
-- 1uF for C5
+- skip C5
 
 Note the direction of the buzzer.
 
 <img src="media/step3.png" alt="Step 3: solder BZ1, R6, C5 and Q1" width="500">
-
 
 
 ### 4. Power and battery protection
@@ -56,12 +71,14 @@ Components:
 - Switch for SW1
 - Charging connector for CHRG
 
+Do not confuse the XB3303A battery protection IC with the N-MOSFETS that are in an identical package.
 
 <img src="media/step4.png" alt="Step 4: solder C1, U3, R1, SW1 and CHRG" width="500">
 
 ### Test time!
 
-With the board powered, short the test points VCC and GND using tweezers or other conducting material. The LED should turn off within a second and the board should then stay off until power cycled. 
+Apply 3.3V between BAT+ and BAT-. Short the test points VCC and GND using tweezers or other conducting material. The LED should turn off within a second and the board should then stay off until power cycled. 
+
 <img src="media/test3-battery-protection.png" alt="Test battery protection: short VCC and GND" width="500">
 
 
@@ -94,12 +111,13 @@ The receiver is mounted on the other side of the PCB, otherwise no one can hit y
 <img src="media/step6.png" alt="Step 7: solder C2 and U2 on the back side">
 
 
-### 8. Battery and cable
-Solder the black side of the battery to BAT- and the red side to BAT+. Solder the cable to the pads as follows:
-* BLACK to LEDs
-* YELLOW to BUTTON
-* RED to VCC
-Secure the cable with a zip tie
+### 8. Program the microcontroller
+
+Bring your PCB to the programming station to get your microcontroller programmed.
+
+
+### 9. Battery
+Solder the black side of the battery to BAT- and the red side to BAT+. 
 
 <img src="media/step8.png" alt="Step 8: solder battery and cable" width="500">
 
@@ -129,7 +147,9 @@ Components:
 - TSAL6100 IR LED
 - Pink THT LED
 
-From the other side of the PCB, insert the switch. Note the direction of the lever. Solder the switch.
+Insert the IR and Pink ("Visible") LED. The longer leg of each LED should go to "+". The IR LED should be in front of the pink LED. Once both LEDs are fitted, solder all 4 of their legs.
+
+<img src="media/blaster-step-4.jpg" alt="Step 2: switch" width="500">
 
 
 ### 4. Cable
@@ -150,3 +170,26 @@ The cable should point from the pads towards the switch and LEDs (as pictured)
 * Clip second half of 3d print on top
 
 <img src="media/blaster-step-5.jpg" alt="Step 2: switch" width="500">
+
+
+### 6. Solder the other end of the cable to the main PCB
+
+Solder the cable to the pads as follows:
+* BLACK to LEDs
+* YELLOW to BUTTON
+* RED to VCC
+Secure the cable with a zip tie
+
+### Done!
+
+You may now blast some lasers
+
+
+### Optional neck strap
+
+* Solder a thick piece of wire to the mounting points
+* Attach a loop of string to the wire
+
+
+
+
