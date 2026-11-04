@@ -88,6 +88,8 @@ Components:
 - 22µF for C4
 - CH32V003 for U1
 
+Note: Align the pin 1 marking (circle) on the microcontroller with the arrow on the PCB.
+
 <img src="media/step5.png" alt="Step 5: solder C3, C4 and U1">
 
 
@@ -97,7 +99,7 @@ Components:
 - 120Ω for R2
 
 
-<img src="media/step7.png" alt="Step 6: solder Q2 and R2">
+<img src="media/step6.png" alt="Step 6: solder Q2 and R2">
 
 
 ### 7. Receiver
@@ -108,7 +110,7 @@ Components:
 
 The receiver is mounted on the other side of the PCB, otherwise no one can hit you and that is cheating. Insert the legs and bend the receiver to fit in the square on the PCB before soldering.
 
-<img src="media/step6.png" alt="Step 7: solder C2 and U2 on the back side">
+<img src="media/step7.jpg" alt="Step 7: Solder receiver">
 
 
 ### 8. Program the microcontroller
