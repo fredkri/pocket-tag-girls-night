@@ -11,6 +11,7 @@ In addition:
 * 3d-printed laser blaster (in a variaty of colours)
 * Battery
 * 40cm of 3-conductor cable
+* Zip tie
 
 Optional extras:
 * String to make a neck-strap
@@ -20,22 +21,20 @@ Optional extras:
 
 ### 1. LED + resistor for LOGO
 Components: 
-- white LED for D3
+- White LED for D3
 - 120Ω for R5
 
-Note the direction of the LED
-Light should point DOWN
+Note the left/right direction of the LED. In addition, light should point DOWN.
 
 <img src="media/step1.png" alt="Step 1: solder D3, R5" width="500">
 
 
 ### 2. LEDs + resistors for shoulder pads
 Components:
-- red LEDs for D1 and D2
+- Red LEDs for D1 and D2
 - 120Ω for R3 and R4
 
-Note the direction of the LEDs
-Light should point DOWN
+Note the left/right direction of the LEDs. In addition, light should point DOWN.
 
 <img src="media/step2.png" alt="Step 2: solder D1, R3, D2 and R4" width="500">
 
@@ -55,9 +54,9 @@ Components:
 - Buzzer for BZ1
 - 2302 NMOS for Q1
 - 1Ω for R6
-- skip C5
+- Skip C5
 
-Note the direction of the buzzer.
+Note the direction of the buzzer. Be careful not to mistake a XB3303A battery protection IC for the 2302 MOSFET - they have the same package.
 
 <img src="media/step3.png" alt="Step 3: solder BZ1, R6, C5 and Q1" width="500">
 
@@ -71,13 +70,13 @@ Components:
 - Switch for SW1
 - Charging connector for CHRG
 
-Do not confuse the XB3303A battery protection IC with the N-MOSFETS that are in an identical package.
+Do not confuse the XB3303A battery protection IC with the MOSFETS - they have the same package.
 
 <img src="media/step4.png" alt="Step 4: solder C1, U3, R1, SW1 and CHRG" width="500">
 
 ### Test time!
 
-Apply 3.3V between BAT+ and BAT-. Short the test points VCC and GND using tweezers or other conducting material. The LED should turn off within a second and the board should then stay off until power cycled. 
+Apply 3.3V between BAT+ and BAT-. Turn on the power switch. The LED under the logo should turn on. Short the test points VCC and GND using tweezers or other conducting material. The LED should turn off within a second and the board should then stay off until power cycled. 
 
 <img src="media/test3-battery-protection.png" alt="Test battery protection: short VCC and GND" width="500">
 
@@ -108,7 +107,7 @@ Components:
 - 1µF for C2
 - VS838 for U2
 
-The receiver is mounted on the other side of the PCB, otherwise no one can hit you and that is cheating. Insert the legs and bend the receiver to fit in the square on the PCB before soldering.
+The receiver is mounted on the other side of the PCB, otherwise no one can hit you and that is cheating. Insert the legs and bend the receiver to fit in the square on the PCB before soldering. The "bump" on the receiver must face outside.
 
 <img src="media/step7.jpg" alt="Step 7: Solder receiver">
 
@@ -129,7 +128,7 @@ Solder the black side of the battery to BAT- and the red side to BAT+.
 
 ### 1. Resistors
 Components:
-- 47Ω for R1
+- 120Ω for R1
 - 47Ω for R2
 
 <img src="media/blaster-step-1.jpg" alt="Step 1: solder R1 and R2" width="500">
@@ -149,9 +148,11 @@ Components:
 - TSAL6100 IR LED
 - Pink THT LED
 
-Insert the IR and Pink ("Visible") LED. The longer leg of each LED should go to "+". The IR LED should be in front of the pink LED. Once both LEDs are fitted, solder all 4 of their legs.
+Insert the IR and Pink ("Visible") LED. You will need to bend the legs of the IR LED to fit the visible LED behind it. The longer leg of each LED should go to "+". The IR LED should be in front of the pink LED. Once both LEDs are fitted, solder all 4 of their legs. After that, cut away the extra piece of leg sticking out behind the board.
 
-<img src="media/blaster-step-4.jpg" alt="Step 2: switch" width="500">
+If you want your laser to blast in a different colour than pink, you can use a different visible LED.  
+
+<img src="media/blaster-step-3.jpg" alt="Step 2: switch" width="500">
 
 
 ### 4. Cable
